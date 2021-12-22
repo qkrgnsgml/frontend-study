@@ -7,28 +7,55 @@ body{
     display: flex;
     justify-content: space-between;
     padding : 8px 12px;
+    margin-bottom: 5%;
 }
 .title{
-    font-size: 24px;
+    font-size: 28px;
+}
+.search{
+    width: 220px;
+    height: 22px;
 }
 .blue{
-    background-color: blue;
+    background-color: lightskyblue;
+    border: 0;
     color:white;
 }
-.footli{
-    display : flex;
-    justify-content: space-around;
+.join{
+    border: 0;
+    color: lightskyblue;
+    background-color: white;
+}
+.image{
+    margin-left: 10%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: left;
 }
 .info{
     display:flex;
+    margin-bottom: 5%;
+}
+.follow{
+    background-color: steelblue;
+    border: 0;
+    color:white;
 }
 .others{
     display:flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.others div{
+    margin-right: 5%;
+}
+.others p{
+    text-align: center;
 }
 .container{
     display:flex;
     justify-content: space-around;
-    
+    margin-bottom: 3%;
 }
 .container2{
     display:flex;
@@ -38,24 +65,57 @@ body{
     width : 30%;
     height : 20vw;
 }
-.item1{
-    background: blue;
-}
-.item2{
-    background:  antiquewhite;
-}
-.item3{
-    background: blueviolet;
-}
-.item4{
-    background: crimson;
-}
-.item5{
-    background: darkcyan;
-}
-.item6{
-    background: darkkhaki;
-}
 .post{
+    padding-right: 30px;
+}
+.postnum{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.name{
+    font-size: 28px;
     padding-right: 20px;
+}
+.name2{
+    font-weight: bold;
+}
+ul{
+    list-style:none;
+}
+.bbs{
+    display:flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.bbs a{
+    margin-right: 10%;
+}
+.lang{
+    display:flex;
+    justify-content: center;
+}
+.foot{
+    color: gray;
+    margin-bottom: 5%;
+}
+.footli{
+    display : flex;
+    justify-content: space-around;
+}
+.footli a{
+    color: gray;
+}
+.footlist{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.list{
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    color: gray;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main2.js"></script>
+</head>
+<body onload="test();">
+    <main>
+        <div>
+            <div>
+                <h1>To do list</h1>
+            </div>
+            <div>
+                <form>
+                    <span>                        
+                        <input type="text" style="display: none;">
+                        <input id="work" type="text" onKeypress="if(event.keyCode==13) {push();}">                        
+                    </span>
+                    <span>
+                        <button type="button" onclick=push();>
+                            +
+                        </button>
+                    </span>
+                </form>
+            </div>
+            <div>
+                <ul id='todolist'></ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

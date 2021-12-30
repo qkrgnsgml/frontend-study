@@ -29,11 +29,11 @@ function test() {
 }
  
 function deleteNode(){
-    
-    let id = this.getAttribute("id"); //버튼의 id i가져옴
-    id = id+"li"; //li의 id i li 만들어서
-    const li = document.getElementById(id); //해당 id인 Element가져옴
-    li.remove();
+    this.parentNode.remove(); //부모노드 삭제 li
+    // let id = this.getAttribute("id"); //버튼의 id i가져옴
+    // id = id+"li"; //li의 id i li 만들어서
+    // const li = document.getElementById(id); //해당 id인 Element가져옴
+    // li.remove();
  }
 
 // const input = document.querySelector('input');

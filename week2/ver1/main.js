@@ -72,4 +72,4 @@ if (i >= 0) {
 //새로고침 해결 방안 https://kkh0977.tistory.com/867
 //1. 새로고침을 아예 막는다. 로 해결
 //2. SessionStorage  or  localstorage사용
-//list를 쿠키에 저장해서 불러오려 했는데 실패
+//list를 쿠키에 저장해서 불러오려 했는데 실패a

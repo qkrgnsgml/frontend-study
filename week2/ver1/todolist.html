@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="test();">
+<body>
     <main>
-        <div>
+        <div id="todolist">
             <div>
                 <h1>To do list</h1>
             </div>
             <div>
-                <form>
-                    <span>                        
-                        <input type="text" style="display: none;">
-                        <input id="work" type="text" onKeypress="if(event.keyCode==13) {push();}">                        
+                <form id="listform">
+                    <span>                                                
+                        <input id="work" name="mywork" type="text" >                        
                     </span>
                     <span>
-                        <button type="button" id="pushbutton">
-                            +
-                        </button>
+                        <input type="submit" value="+" id="pushbutton">
+                    </span>
+                    <span>
+                        <input type="button" value="초기화" id="resetButton">
                     </span>
                 </form>
             </div>
             <div>
-                <ul id='todolist'></ul>
+                <ul id='list'></ul>
             </div>
         </div>
     </main>

@@ -90,13 +90,13 @@ ul li:hover {
   color: white;
 }
 
-ul li.checked {
+.checked {
   background: #ddd;
   color: #272341;
   text-decoration: line-through;
 }
 
-ul li.checked::before {
+.checked::before {
   content: "";
   position: absolute;
   border-color: #272341;

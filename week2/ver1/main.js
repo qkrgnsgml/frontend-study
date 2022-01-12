@@ -15,7 +15,7 @@ pushbutton.addEventListener("submit", push);
      let savelist = localStorage.getItem('list');
      let savearray = savelist.split(',');
      list=savearray;
-     console.log(list);
+     //console.log(list);
      for(let j=0; j<savearray.length; j++){
          makeList(savearray[j]);
      }

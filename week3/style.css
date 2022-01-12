@@ -1,0 +1,53 @@
+* {
+    border-style: solid;
+    border-color: #f33;
+    border-width: 0px;
+}
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    padding : 8px 12px;
+}
+.search {
+    height: 50%;
+}
+.myvideo {
+    width:95%;
+    max-width: 100%;
+    height: auto;
+}
+/* flex말고 그냥 한줄로는 가운데정렬 못주는지 align */
+.videoSpace {
+    display: flex;
+    justify-content: center;
+}
+.videoTitle {
+    padding-bottom: 0;
+}
+.videoInfo {    
+    padding-bottom: 1rem;
+}
+hr {
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+.youtuber {
+    display: flex;
+    
+}
+.subsc {
+    margin-left: 60%;
+}
+.othervideo1,.othervideo2,.othervideo3 {
+    display: flex;
+}
+p {
+    margin: 0;
+    padding: 0;
+}

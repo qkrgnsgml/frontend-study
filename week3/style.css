@@ -44,7 +44,7 @@ hr {
 .subsc {
     margin-left: 60%;
 }
-.othervideo1,.othervideo2,.othervideo3 {
+.othervideo {
     display: flex;
 }
 p {

@@ -8,16 +8,16 @@ pushbutton.addEventListener("submit", push);
 //inputbox.addEventListener("onKeypress", enter);
 //var reset = document.getElementById("resetButton");
 //reset.addEventListener('click',localStorage.clear());
+const listContainer = document.getElementById('list');
 
 
-
- if(localStorage.getItem('list')!=null){
+if(localStorage.getItem('list')!=null){
      let savelist = localStorage.getItem('list');
      let savearray = savelist.split(',');
      list=savearray;
      //console.log(list);
-     for(let j=0; j<savearray.length; j++){
-         makeList(savearray[j]);
+     for(let j=0; j<list.length; j++){
+         makeList(list[j]);
      }
  }
 
@@ -70,6 +70,7 @@ function deleteNode() {
     // li.remove();
 }
 function makeList(work){
+    
     const button = document.createElement("button");  //button태그 생성
     button.addEventListener("click", deleteNode); //버튼눌렀을때 함수
     const xnode = document.createTextNode('x'); //버튼에 넣은 x표시노드 추가
@@ -89,7 +90,7 @@ function makeList(work){
         event.target.classList.toggle('checked');
     });
 
-    document.getElementById('list').appendChild(li); //li를 ul의 자식노드로 추가
+    listContainer.appendChild(li); //li를 ul의 자식노드로 추가
 
 }
 // const input = document.querySelector('input');

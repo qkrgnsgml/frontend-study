@@ -1,26 +1,42 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Hello from './component/Hello'
+import Welcome from './component/Welcome';
+import styles from './App.module.css';
 
 function App() {
-  console.log(123);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reactasdasd1
-        </a>
-      </header>
+    <div className="App">  
+    <Hello></Hello>
+    <Welcome></Welcome>
+    <div className={styles.box}>APp</div>
     </div>
   );
 }
 
 export default App;
+//ver1
+// function App() {
+//   const name="Tom"
+//   const user={
+//     name:"Jane",
+//     url:"https://naver.com",
+//   }
+//   return (
+//     <div className="App">
+//       <h1
+//         style={{
+//           color:"red",
+//           backgroundColor: "green",
+//         }}
+//         >
+//           Welcome, {name}
+//           <p>{2+3}</p>
+//           <p>{user.name}</p>
+//         </h1>
+//         <a href={user.url}>{user.name}</a>
+//     </div>
+//   );
+// }
+
+// export default App;

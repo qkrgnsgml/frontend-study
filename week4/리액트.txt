@@ -1,3 +1,5 @@
 npx create-react-app my-app	mpapp생성
 npm start 	mypapp실행
 컨트롤 C 		myapp종료
+
+json-server --watch ./src/db/data.json --port 3001  	json서버
